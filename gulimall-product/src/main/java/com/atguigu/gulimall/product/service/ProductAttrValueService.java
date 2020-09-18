@@ -1,7 +1,7 @@
 package com.atguigu.gulimall.product.service;
 
-import com.baomidou.mybatisplus.extension.service.IService;
 import com.atguigu.common.utils.PageUtils;
+import com.baomidou.mybatisplus.extension.service.IService;
 import com.atguigu.gulimall.product.entity.ProductAttrValueEntity;
 
 import java.util.List;
@@ -10,9 +10,9 @@ import java.util.Map;
 /**
  * spu属性值
  *
- * @author leifengyang
- * @email leifengyang@gmail.com
- * @date 2019-10-01 21:08:49
+ * @author cuiyue
+ * @email 380920705@qq.coom
+ * @date 2020-05-13 10:51:10
  */
 public interface ProductAttrValueService extends IService<ProductAttrValueEntity> {
 
@@ -20,12 +20,8 @@ public interface ProductAttrValueService extends IService<ProductAttrValueEntity
 
     void saveProductAttr(List<ProductAttrValueEntity> collect);
 
-
     List<ProductAttrValueEntity> baseAttrlistforspu(Long spuId);
 
-
     void updateSpuAttr(Long spuId, List<ProductAttrValueEntity> entities);
-
-
 }
 

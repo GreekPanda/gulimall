@@ -10,9 +10,9 @@ import lombok.Data;
 /**
  * 商品库存
  * 
- * @author leifengyang
- * @email leifengyang@gmail.com
- * @date 2019-10-08 09:59:40
+ * @author cuiyue
+ * @email 380920705@qq.coom
+ * @date 2020-05-13 16:20:49
  */
 @Data
 @TableName("wms_ware_sku")

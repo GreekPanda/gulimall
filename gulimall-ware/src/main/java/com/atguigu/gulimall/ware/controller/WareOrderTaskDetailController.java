@@ -20,9 +20,9 @@ import com.atguigu.common.utils.R;
 /**
  * 库存工作单
  *
- * @author leifengyang
- * @email leifengyang@gmail.com
- * @date 2019-10-08 09:59:40
+ * @author cuiyue
+ * @email 380920705@qq.coom
+ * @date 2020-05-13 16:20:49
  */
 @RestController
 @RequestMapping("ware/wareordertaskdetail")
@@ -34,7 +34,6 @@ public class WareOrderTaskDetailController {
      * 列表
      */
     @RequestMapping("/list")
-    //@RequiresPermissions("ware:wareordertaskdetail:list")
     public R list(@RequestParam Map<String, Object> params){
         PageUtils page = wareOrderTaskDetailService.queryPage(params);
 
@@ -46,7 +45,6 @@ public class WareOrderTaskDetailController {
      * 信息
      */
     @RequestMapping("/info/{id}")
-    //@RequiresPermissions("ware:wareordertaskdetail:info")
     public R info(@PathVariable("id") Long id){
 		WareOrderTaskDetailEntity wareOrderTaskDetail = wareOrderTaskDetailService.getById(id);
 
@@ -57,7 +55,6 @@ public class WareOrderTaskDetailController {
      * 保存
      */
     @RequestMapping("/save")
-    //@RequiresPermissions("ware:wareordertaskdetail:save")
     public R save(@RequestBody WareOrderTaskDetailEntity wareOrderTaskDetail){
 		wareOrderTaskDetailService.save(wareOrderTaskDetail);
 
@@ -68,7 +65,6 @@ public class WareOrderTaskDetailController {
      * 修改
      */
     @RequestMapping("/update")
-    //@RequiresPermissions("ware:wareordertaskdetail:update")
     public R update(@RequestBody WareOrderTaskDetailEntity wareOrderTaskDetail){
 		wareOrderTaskDetailService.updateById(wareOrderTaskDetail);
 
@@ -79,7 +75,6 @@ public class WareOrderTaskDetailController {
      * 删除
      */
     @RequestMapping("/delete")
-    //@RequiresPermissions("ware:wareordertaskdetail:delete")
     public R delete(@RequestBody Long[] ids){
 		wareOrderTaskDetailService.removeByIds(Arrays.asList(ids));
 

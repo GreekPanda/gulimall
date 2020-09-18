@@ -11,9 +11,9 @@ import lombok.Data;
 /**
  * spu信息
  * 
- * @author leifengyang
- * @email leifengyang@gmail.com
- * @date 2019-10-01 21:08:49
+ * @author cuiyue
+ * @email 380920705@qq.coom
+ * @date 2020-05-13 10:51:10
  */
 @Data
 @TableName("pms_spu_info")
@@ -46,7 +46,7 @@ public class SpuInfoEntity implements Serializable {
 	 */
 	private BigDecimal weight;
 	/**
-	 * 上架状态[0 - 新建，1 - 上架，2-下架]
+	 * 上架状态[0 - 下架，1 - 上架]
 	 */
 	private Integer publishStatus;
 	/**

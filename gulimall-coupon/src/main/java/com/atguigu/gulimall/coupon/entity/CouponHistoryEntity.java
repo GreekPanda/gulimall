@@ -10,9 +10,9 @@ import lombok.Data;
 /**
  * 优惠券领取历史记录
  * 
- * @author leifengyang
- * @email leifengyang@gmail.com
- * @date 2019-10-08 09:36:40
+ * @author cuiyue
+ * @email 380920705@qq.coom
+ * @date 2020-05-13 15:35:45
  */
 @Data
 @TableName("sms_coupon_history")

@@ -7,9 +7,9 @@ import org.apache.ibatis.annotations.Mapper;
 /**
  * 会员统计信息
  * 
- * @author leifengyang
- * @email leifengyang@gmail.com
- * @date 2019-10-08 09:47:05
+ * @author cuiyue
+ * @email 380920705@qq.coom
+ * @date 2020-05-14 09:57:12
  */
 @Mapper
 public interface MemberStatisticsInfoDao extends BaseMapper<MemberStatisticsInfoEntity> {

@@ -9,12 +9,14 @@ import java.util.Map;
 /**
  * 库存工作单
  *
- * @author leifengyang
- * @email leifengyang@gmail.com
- * @date 2019-10-08 09:59:40
+ * @author cuiyue
+ * @email 380920705@qq.coom
+ * @date 2020-05-13 16:20:49
  */
 public interface WareOrderTaskService extends IService<WareOrderTaskEntity> {
 
     PageUtils queryPage(Map<String, Object> params);
+
+    WareOrderTaskEntity getOrderTaskByOrderSn(String orderSn);
 }
 
